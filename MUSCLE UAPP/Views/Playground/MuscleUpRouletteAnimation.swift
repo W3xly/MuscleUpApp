@@ -10,7 +10,7 @@ import SwiftUI
 
 //MARK: - IMAGE ARRAY
 
-enum MuscleUpImage: Int, CaseIterable { // Inherited from Int for convenient below
+enum MuscleUpImage: Int, CaseIterable { // Inherituje z INT 
     
     case muscleUp1, muscleUp2, muscleUp3, muscleUp4, muscleUp5
     
@@ -34,11 +34,11 @@ struct MuscleUpModifier: AnimatableModifier {
     
     init(image: MuscleUpImage) {
         self.position = image
-        self.animating = Double(position.rawValue) // enum to Double
+        self.animating = Double(position.rawValue) // enum -> Double
     }
     
-    private var animating: Double // Double supports Animatable
-    var animatableData: Double { // required part of Animatable protocol
+    private var animating: Double // Double podporuje Animatable
+    var animatableData: Double { // potřebná část Animatable protokolu
         get { animating }
         set { animating = newValue }
     }
