@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -10,11 +10,33 @@
         <scene sceneID="EHf-IW-A2E">
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="xGP-fh-zij">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mup logo" translatesAutoresizingMaskIntoConstraints="NO" id="MQD-Jv-DM2">
+                                <rect key="frame" x="-326" y="106" width="1066" height="684"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_text_white" translatesAutoresizingMaskIntoConstraints="NO" id="NmS-y0-U89">
+                                <rect key="frame" x="5" y="800" width="404" height="184"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="NmS-y0-U89" secondAttribute="trailing" constant="5" id="Apc-Nx-CKQ"/>
+                            <constraint firstItem="xGP-fh-zij" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="OMb-w1-AEA"/>
+                            <constraint firstAttribute="bottom" secondItem="xGP-fh-zij" secondAttribute="bottom" id="P5q-ak-Q8F"/>
+                            <constraint firstItem="MQD-Jv-DM2" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Rpb-yY-PVc"/>
+                            <constraint firstItem="xGP-fh-zij" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Ue3-L5-oP0"/>
+                            <constraint firstItem="NmS-y0-U89" firstAttribute="top" secondItem="MQD-Jv-DM2" secondAttribute="bottom" constant="10" id="naN-p9-ejR"/>
+                            <constraint firstItem="NmS-y0-U89" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="5" id="qs6-3Y-wl1"/>
+                            <constraint firstItem="NmS-y0-U89" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="sxe-H5-2h4"/>
+                            <constraint firstItem="MQD-Jv-DM2" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="vDe-0c-pcb"/>
+                            <constraint firstAttribute="trailing" secondItem="xGP-fh-zij" secondAttribute="trailing" id="vTq-4I-xZr"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -22,4 +44,9 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="background" width="1194" height="834"/>
+        <image name="logo_text_white" width="439.5" height="92"/>
+        <image name="mup logo" width="533" height="342"/>
+    </resources>
 </document>

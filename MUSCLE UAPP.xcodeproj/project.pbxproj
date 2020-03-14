@@ -3,27 +3,100 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		101C005B2413E1D10097555F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101C005A2413E1D10097555F /* AppDelegate.swift */; };
 		101C005D2413E1D10097555F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101C005C2413E1D10097555F /* SceneDelegate.swift */; };
-		101C005F2413E1D10097555F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101C005E2413E1D10097555F /* ContentView.swift */; };
-		101C00612413E1D30097555F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 101C00602413E1D30097555F /* Assets.xcassets */; };
 		101C00642413E1D30097555F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 101C00632413E1D30097555F /* Preview Assets.xcassets */; };
 		101C00672413E1D30097555F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 101C00652413E1D30097555F /* LaunchScreen.storyboard */; };
+		101C0070241659130097555F /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101C006F241659130097555F /* NavigationView.swift */; };
+		101C007224165DAD0097555F /* PlaygroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101C007124165DAD0097555F /* PlaygroundView.swift */; };
+		101C007424165DD60097555F /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101C007324165DD60097555F /* InfoView.swift */; };
+		101C007624165DE90097555F /* ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101C007524165DE90097555F /* ExerciseView.swift */; };
+		101C007824165DF30097555F /* TechniqueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101C007724165DF30097555F /* TechniqueView.swift */; };
+		1048E3F024169C52005256E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1048E3EF24169C51005256E8 /* Assets.xcassets */; };
+		1048E3F924169CF2005256E8 /* TipsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1048E3F724169CF2005256E8 /* TipsData.swift */; };
+		1048E3FA24169CF2005256E8 /* ExerciseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1048E3F424169CF2005256E8 /* ExerciseData.swift */; };
+		1048E3FB24169CF2005256E8 /* TechniqueData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1048E3F624169CF2005256E8 /* TechniqueData.swift */; };
+		1048E40124169D1D005256E8 /* ExerciseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1048E3FD24169D1D005256E8 /* ExerciseModel.swift */; };
+		1048E40224169D1D005256E8 /* TechniqueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1048E3FE24169D1D005256E8 /* TechniqueModel.swift */; };
+		1048E40424169D1D005256E8 /* TipsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1048E40024169D1D005256E8 /* TipsModel.swift */; };
+		1048E40D24169E16005256E8 /* MuscleUpRouletteAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1048E40C24169E16005256E8 /* MuscleUpRouletteAnimation.swift */; };
+		104C2A132416BC8000A07B9F /* TechniqueCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104C2A122416BC8000A07B9F /* TechniqueCardView.swift */; };
+		105476522419379A0035B2B7 /* ExerciseCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105476512419379A0035B2B7 /* ExerciseCardView.swift */; };
+		10547654241A40A50035B2B7 /* ExerciseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10547653241A40A50035B2B7 /* ExerciseDetailView.swift */; };
+		105F9630241AA97300FBB8B1 /* RouletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105F962F241AA97300FBB8B1 /* RouletteView.swift */; };
+		106366F92416F0F80051CFCC /* TechniqueDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106366F82416F0F80051CFCC /* TechniqueDetailView.swift */; };
+		1063670A2416F3700051CFCC /* australian.gif in Resources */ = {isa = PBXBuildFile; fileRef = 106366FB2416F36D0051CFCC /* australian.gif */; };
+		1063670B2416F3700051CFCC /* dynamic.gif in Resources */ = {isa = PBXBuildFile; fileRef = 106366FC2416F36D0051CFCC /* dynamic.gif */; };
+		1063670C2416F3700051CFCC /* dynamicPullUp.gif in Resources */ = {isa = PBXBuildFile; fileRef = 106366FD2416F36E0051CFCC /* dynamicPullUp.gif */; };
+		1063670D2416F3700051CFCC /* rubber.gif in Resources */ = {isa = PBXBuildFile; fileRef = 106366FE2416F36E0051CFCC /* rubber.gif */; };
+		1063670E2416F3700051CFCC /* withHelp.gif in Resources */ = {isa = PBXBuildFile; fileRef = 106366FF2416F36E0051CFCC /* withHelp.gif */; };
+		1063670F2416F3700051CFCC /* kick.gif in Resources */ = {isa = PBXBuildFile; fileRef = 106367002416F36E0051CFCC /* kick.gif */; };
+		106367102416F3700051CFCC /* lockNLoad.gif in Resources */ = {isa = PBXBuildFile; fileRef = 106367012416F36E0051CFCC /* lockNLoad.gif */; };
+		106367112416F3700051CFCC /* airJump.gif in Resources */ = {isa = PBXBuildFile; fileRef = 106367022416F36E0051CFCC /* airJump.gif */; };
+		106367122416F3700051CFCC /* swing.gif in Resources */ = {isa = PBXBuildFile; fileRef = 106367032416F36E0051CFCC /* swing.gif */; };
+		106367132416F3700051CFCC /* negative.gif in Resources */ = {isa = PBXBuildFile; fileRef = 106367042416F36F0051CFCC /* negative.gif */; };
+		106367142416F3700051CFCC /* dip.gif in Resources */ = {isa = PBXBuildFile; fileRef = 106367052416F36F0051CFCC /* dip.gif */; };
+		106367152416F3700051CFCC /* pullup.gif in Resources */ = {isa = PBXBuildFile; fileRef = 106367062416F36F0051CFCC /* pullup.gif */; };
+		106367162416F3700051CFCC /* abs.gif in Resources */ = {isa = PBXBuildFile; fileRef = 106367072416F36F0051CFCC /* abs.gif */; };
+		106367172416F3700051CFCC /* jumpMuscleUp.gif in Resources */ = {isa = PBXBuildFile; fileRef = 106367082416F3700051CFCC /* jumpMuscleUp.gif */; };
+		106367182416F3700051CFCC /* dynamicAustralian.gif in Resources */ = {isa = PBXBuildFile; fileRef = 106367092416F3700051CFCC /* dynamicAustralian.gif */; };
+		1063672424170B310051CFCC /* TitilliumWeb-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1063672324170B300051CFCC /* TitilliumWeb-Black.ttf */; };
+		10636726241794140051CFCC /* TipsCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10636725241794140051CFCC /* TipsCardView.swift */; };
+		1091ECC1241C3194007177F3 /* GuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1091ECC0241C3194007177F3 /* GuideView.swift */; };
+		B981EA87A6DB57FC6D9BCDE7 /* Pods_MUSCLE_UAPP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B35A7965E237B7BE98B6CAFB /* Pods_MUSCLE_UAPP.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		101C00572413E1D10097555F /* MUSCLE UAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MUSCLE UAPP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		101C005A2413E1D10097555F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		101C005C2413E1D10097555F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		101C005E2413E1D10097555F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		101C00602413E1D30097555F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		101C00632413E1D30097555F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		101C00662413E1D30097555F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		101C00682413E1D30097555F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		101C00682413E1D30097555F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "/Users/johanka/Desktop/course again/MUSCLE UAPP/MUSCLE UAPP/Info.plist"; sourceTree = "<absolute>"; };
+		101C006F241659130097555F /* NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; wrapsLines = 1; };
+		101C007124165DAD0097555F /* PlaygroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundView.swift; sourceTree = "<group>"; };
+		101C007324165DD60097555F /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		101C007524165DE90097555F /* ExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseView.swift; sourceTree = "<group>"; };
+		101C007724165DF30097555F /* TechniqueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechniqueView.swift; sourceTree = "<group>"; };
+		1048E3EF24169C51005256E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1048E3F424169CF2005256E8 /* ExerciseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseData.swift; sourceTree = "<group>"; };
+		1048E3F624169CF2005256E8 /* TechniqueData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechniqueData.swift; sourceTree = "<group>"; };
+		1048E3F724169CF2005256E8 /* TipsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsData.swift; sourceTree = "<group>"; };
+		1048E3FD24169D1D005256E8 /* ExerciseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseModel.swift; sourceTree = "<group>"; };
+		1048E3FE24169D1D005256E8 /* TechniqueModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TechniqueModel.swift; sourceTree = "<group>"; };
+		1048E40024169D1D005256E8 /* TipsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsModel.swift; sourceTree = "<group>"; };
+		1048E40C24169E16005256E8 /* MuscleUpRouletteAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuscleUpRouletteAnimation.swift; sourceTree = "<group>"; };
+		104C2A122416BC8000A07B9F /* TechniqueCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechniqueCardView.swift; sourceTree = "<group>"; };
+		105476512419379A0035B2B7 /* ExerciseCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCardView.swift; sourceTree = "<group>"; };
+		10547653241A40A50035B2B7 /* ExerciseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailView.swift; sourceTree = "<group>"; };
+		105F962F241AA97300FBB8B1 /* RouletteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouletteView.swift; sourceTree = "<group>"; };
+		106366F82416F0F80051CFCC /* TechniqueDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechniqueDetailView.swift; sourceTree = "<group>"; };
+		106366FB2416F36D0051CFCC /* australian.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = australian.gif; sourceTree = "<group>"; };
+		106366FC2416F36D0051CFCC /* dynamic.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = dynamic.gif; sourceTree = "<group>"; };
+		106366FD2416F36E0051CFCC /* dynamicPullUp.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = dynamicPullUp.gif; sourceTree = "<group>"; };
+		106366FE2416F36E0051CFCC /* rubber.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = rubber.gif; sourceTree = "<group>"; };
+		106366FF2416F36E0051CFCC /* withHelp.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = withHelp.gif; sourceTree = "<group>"; };
+		106367002416F36E0051CFCC /* kick.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = kick.gif; sourceTree = "<group>"; };
+		106367012416F36E0051CFCC /* lockNLoad.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = lockNLoad.gif; sourceTree = "<group>"; };
+		106367022416F36E0051CFCC /* airJump.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = airJump.gif; sourceTree = "<group>"; };
+		106367032416F36E0051CFCC /* swing.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = swing.gif; sourceTree = "<group>"; };
+		106367042416F36F0051CFCC /* negative.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = negative.gif; sourceTree = "<group>"; };
+		106367052416F36F0051CFCC /* dip.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = dip.gif; sourceTree = "<group>"; };
+		106367062416F36F0051CFCC /* pullup.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = pullup.gif; sourceTree = "<group>"; };
+		106367072416F36F0051CFCC /* abs.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = abs.gif; sourceTree = "<group>"; };
+		106367082416F3700051CFCC /* jumpMuscleUp.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = jumpMuscleUp.gif; sourceTree = "<group>"; };
+		106367092416F3700051CFCC /* dynamicAustralian.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = dynamicAustralian.gif; sourceTree = "<group>"; };
+		1063671A241701380051CFCC /* TitilliumWeb-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-Black.ttf"; sourceTree = "<group>"; };
+		1063672324170B300051CFCC /* TitilliumWeb-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "TitilliumWeb-Black.ttf"; path = "../MUSCLE UAPP/Views/Playground/TitilliumWeb-Black.ttf"; sourceTree = "<group>"; };
+		10636725241794140051CFCC /* TipsCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsCardView.swift; sourceTree = "<group>"; };
+		1091ECC0241C3194007177F3 /* GuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideView.swift; sourceTree = "<group>"; };
+		2F3F1642A71765C448F4CB36 /* Pods-MUSCLE UAPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MUSCLE UAPP.debug.xcconfig"; path = "Target Support Files/Pods-MUSCLE UAPP/Pods-MUSCLE UAPP.debug.xcconfig"; sourceTree = "<group>"; };
+		A602316ACAD8962C9C946F63 /* Pods-MUSCLE UAPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MUSCLE UAPP.release.xcconfig"; path = "Target Support Files/Pods-MUSCLE UAPP/Pods-MUSCLE UAPP.release.xcconfig"; sourceTree = "<group>"; };
+		B35A7965E237B7BE98B6CAFB /* Pods_MUSCLE_UAPP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MUSCLE_UAPP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B981EA87A6DB57FC6D9BCDE7 /* Pods_MUSCLE_UAPP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,7 +115,11 @@
 			isa = PBXGroup;
 			children = (
 				101C00592413E1D10097555F /* MUSCLE UAPP */,
+				101C00682413E1D30097555F /* Info.plist */,
+				10636719241700F70051CFCC /* Fonts */,
 				101C00582413E1D10097555F /* Products */,
+				8086E1929F7D0C4ECE48692C /* Pods */,
+				D93E84F5B5C400C83A390BD5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +134,14 @@
 		101C00592413E1D10097555F /* MUSCLE UAPP */ = {
 			isa = PBXGroup;
 			children = (
+				101C006E241658FC0097555F /* Views */,
+				1048E40524169D23005256E8 /* Model */,
+				1048E3FC24169D06005256E8 /* Data */,
+				101C00652413E1D30097555F /* LaunchScreen.storyboard */,
 				101C005A2413E1D10097555F /* AppDelegate.swift */,
 				101C005C2413E1D10097555F /* SceneDelegate.swift */,
-				101C005E2413E1D10097555F /* ContentView.swift */,
-				101C00602413E1D30097555F /* Assets.xcassets */,
-				101C00652413E1D30097555F /* LaunchScreen.storyboard */,
-				101C00682413E1D30097555F /* Info.plist */,
+				1048E3EF24169C51005256E8 /* Assets.xcassets */,
+				106366FA2416F34C0051CFCC /* Gif */,
 				101C00622413E1D30097555F /* Preview Content */,
 			);
 			path = "MUSCLE UAPP";
@@ -75,6 +155,126 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		101C006E241658FC0097555F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				101C006F241659130097555F /* NavigationView.swift */,
+				1048E40824169DD2005256E8 /* Playground */,
+				1048E40A24169DE0005256E8 /* Exercise */,
+				1048E40B24169DE7005256E8 /* Technique */,
+				1048E40924169DD9005256E8 /* Info */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1048E3FC24169D06005256E8 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				1048E3F424169CF2005256E8 /* ExerciseData.swift */,
+				1048E3F624169CF2005256E8 /* TechniqueData.swift */,
+				1048E3F724169CF2005256E8 /* TipsData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		1048E40524169D23005256E8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1048E3FD24169D1D005256E8 /* ExerciseModel.swift */,
+				1048E3FE24169D1D005256E8 /* TechniqueModel.swift */,
+				1048E40024169D1D005256E8 /* TipsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1048E40824169DD2005256E8 /* Playground */ = {
+			isa = PBXGroup;
+			children = (
+				101C007124165DAD0097555F /* PlaygroundView.swift */,
+				1048E40C24169E16005256E8 /* MuscleUpRouletteAnimation.swift */,
+				105F962F241AA97300FBB8B1 /* RouletteView.swift */,
+				1091ECC0241C3194007177F3 /* GuideView.swift */,
+			);
+			path = Playground;
+			sourceTree = "<group>";
+		};
+		1048E40924169DD9005256E8 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				101C007324165DD60097555F /* InfoView.swift */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
+		1048E40A24169DE0005256E8 /* Exercise */ = {
+			isa = PBXGroup;
+			children = (
+				101C007524165DE90097555F /* ExerciseView.swift */,
+				105476512419379A0035B2B7 /* ExerciseCardView.swift */,
+				10547653241A40A50035B2B7 /* ExerciseDetailView.swift */,
+			);
+			path = Exercise;
+			sourceTree = "<group>";
+		};
+		1048E40B24169DE7005256E8 /* Technique */ = {
+			isa = PBXGroup;
+			children = (
+				101C007724165DF30097555F /* TechniqueView.swift */,
+				104C2A122416BC8000A07B9F /* TechniqueCardView.swift */,
+				106366F82416F0F80051CFCC /* TechniqueDetailView.swift */,
+				10636725241794140051CFCC /* TipsCardView.swift */,
+			);
+			path = Technique;
+			sourceTree = "<group>";
+		};
+		106366FA2416F34C0051CFCC /* Gif */ = {
+			isa = PBXGroup;
+			children = (
+				106367072416F36F0051CFCC /* abs.gif */,
+				106367022416F36E0051CFCC /* airJump.gif */,
+				106366FB2416F36D0051CFCC /* australian.gif */,
+				106367052416F36F0051CFCC /* dip.gif */,
+				106366FC2416F36D0051CFCC /* dynamic.gif */,
+				106367092416F3700051CFCC /* dynamicAustralian.gif */,
+				106366FD2416F36E0051CFCC /* dynamicPullUp.gif */,
+				106367082416F3700051CFCC /* jumpMuscleUp.gif */,
+				106367002416F36E0051CFCC /* kick.gif */,
+				106367012416F36E0051CFCC /* lockNLoad.gif */,
+				106367042416F36F0051CFCC /* negative.gif */,
+				106367062416F36F0051CFCC /* pullup.gif */,
+				106366FE2416F36E0051CFCC /* rubber.gif */,
+				106367032416F36E0051CFCC /* swing.gif */,
+				106366FF2416F36E0051CFCC /* withHelp.gif */,
+			);
+			path = Gif;
+			sourceTree = "<group>";
+		};
+		10636719241700F70051CFCC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1063671A241701380051CFCC /* TitilliumWeb-Black.ttf */,
+				1063672324170B300051CFCC /* TitilliumWeb-Black.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		8086E1929F7D0C4ECE48692C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2F3F1642A71765C448F4CB36 /* Pods-MUSCLE UAPP.debug.xcconfig */,
+				A602316ACAD8962C9C946F63 /* Pods-MUSCLE UAPP.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D93E84F5B5C400C83A390BD5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B35A7965E237B7BE98B6CAFB /* Pods_MUSCLE_UAPP.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,9 +282,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 101C006B2413E1D30097555F /* Build configuration list for PBXNativeTarget "MUSCLE UAPP" */;
 			buildPhases = (
+				4AFCC141ADBCE09D90A55A06 /* [CP] Check Pods Manifest.lock */,
 				101C00532413E1D10097555F /* Sources */,
 				101C00542413E1D10097555F /* Frameworks */,
 				101C00552413E1D10097555F /* Resources */,
+				347FC162E1DD537A1AA512C6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,21 +336,97 @@
 			buildActionMask = 2147483647;
 			files = (
 				101C00672413E1D30097555F /* LaunchScreen.storyboard in Resources */,
+				106367162416F3700051CFCC /* abs.gif in Resources */,
+				106367122416F3700051CFCC /* swing.gif in Resources */,
+				1063670B2416F3700051CFCC /* dynamic.gif in Resources */,
+				106367152416F3700051CFCC /* pullup.gif in Resources */,
+				106367172416F3700051CFCC /* jumpMuscleUp.gif in Resources */,
+				106367112416F3700051CFCC /* airJump.gif in Resources */,
+				1063670C2416F3700051CFCC /* dynamicPullUp.gif in Resources */,
+				1063670D2416F3700051CFCC /* rubber.gif in Resources */,
+				106367102416F3700051CFCC /* lockNLoad.gif in Resources */,
+				1048E3F024169C52005256E8 /* Assets.xcassets in Resources */,
+				1063670E2416F3700051CFCC /* withHelp.gif in Resources */,
+				106367132416F3700051CFCC /* negative.gif in Resources */,
+				106367142416F3700051CFCC /* dip.gif in Resources */,
+				1063672424170B310051CFCC /* TitilliumWeb-Black.ttf in Resources */,
+				1063670A2416F3700051CFCC /* australian.gif in Resources */,
+				1063670F2416F3700051CFCC /* kick.gif in Resources */,
+				106367182416F3700051CFCC /* dynamicAustralian.gif in Resources */,
 				101C00642413E1D30097555F /* Preview Assets.xcassets in Resources */,
-				101C00612413E1D30097555F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		347FC162E1DD537A1AA512C6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MUSCLE UAPP/Pods-MUSCLE UAPP-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MUSCLE UAPP/Pods-MUSCLE UAPP-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MUSCLE UAPP/Pods-MUSCLE UAPP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4AFCC141ADBCE09D90A55A06 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MUSCLE UAPP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		101C00532413E1D10097555F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				101C007824165DF30097555F /* TechniqueView.swift in Sources */,
+				101C007624165DE90097555F /* ExerciseView.swift in Sources */,
+				104C2A132416BC8000A07B9F /* TechniqueCardView.swift in Sources */,
+				1048E3F924169CF2005256E8 /* TipsData.swift in Sources */,
 				101C005B2413E1D10097555F /* AppDelegate.swift in Sources */,
 				101C005D2413E1D10097555F /* SceneDelegate.swift in Sources */,
-				101C005F2413E1D10097555F /* ContentView.swift in Sources */,
+				1048E3FB24169CF2005256E8 /* TechniqueData.swift in Sources */,
+				1048E3FA24169CF2005256E8 /* ExerciseData.swift in Sources */,
+				105F9630241AA97300FBB8B1 /* RouletteView.swift in Sources */,
+				106366F92416F0F80051CFCC /* TechniqueDetailView.swift in Sources */,
+				10636726241794140051CFCC /* TipsCardView.swift in Sources */,
+				1048E40424169D1D005256E8 /* TipsModel.swift in Sources */,
+				1048E40124169D1D005256E8 /* ExerciseModel.swift in Sources */,
+				10547654241A40A50035B2B7 /* ExerciseDetailView.swift in Sources */,
+				1048E40D24169E16005256E8 /* MuscleUpRouletteAnimation.swift in Sources */,
+				1048E40224169D1D005256E8 /* TechniqueModel.swift in Sources */,
+				105476522419379A0035B2B7 /* ExerciseCardView.swift in Sources */,
+				101C0070241659130097555F /* NavigationView.swift in Sources */,
+				101C007424165DD60097555F /* InfoView.swift in Sources */,
+				1091ECC1241C3194007177F3 /* GuideView.swift in Sources */,
+				101C007224165DAD0097555F /* PlaygroundView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +560,7 @@
 		};
 		101C006C2413E1D30097555F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F3F1642A71765C448F4CB36 /* Pods-MUSCLE UAPP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,12 +575,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.podmolik.MUSCLE-UAPP";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		101C006D2413E1D30097555F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A602316ACAD8962C9C946F63 /* Pods-MUSCLE UAPP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -316,7 +596,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.podmolik.MUSCLE-UAPP";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
