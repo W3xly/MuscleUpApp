@@ -12,7 +12,6 @@ struct TipsCardView: View {
     
     var tips: Tips
     
-    
     var body: some View {
         VStack(alignment: .center, spacing: 0) {
             Text(tips.content)

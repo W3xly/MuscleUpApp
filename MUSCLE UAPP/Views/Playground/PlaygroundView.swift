@@ -10,10 +10,6 @@ import SwiftUI
 
 struct PlaygroundView: View {
     
-    
-    @State var roulettePosition: CGFloat = 30
-    @State private var actualQuote: Int = 0
-    
     @State var showGuideView:Bool = false
     
     var animationView = MuscleUpRouletteAnimation()
@@ -24,7 +20,7 @@ struct PlaygroundView: View {
             GeometryReader { geometry in
                 VStack(spacing: 0) {
                     MuscleUpRouletteAnimation()
-                        .scaleEffect(geometry.size.height / 520)
+                        .scaleEffect(geometry.size.height / 520) // Pro rozdílnou velikost displeje
                         .edgesIgnoringSafeArea(.all)
                     Spacer()
                 }
@@ -41,7 +37,7 @@ struct PlaygroundView: View {
                 Spacer()
                 VStack {
                     Button(action: {
-                        self.haptics.notificationOccurred(.success)
+                        self.haptics.notificationOccurred(.success) // Odezva kliku
                         self.showGuideView.toggle()
                         
                     }) {

@@ -11,12 +11,12 @@ import SwiftUI
 struct InfoView: View {
     var body: some View {
         VStack(alignment: .center, spacing: 0) {
-            Capsule()
+            Capsule() // LINIE
                 .frame(width:120, height: 6)
                 .foregroundColor(Color("ColorBlue3"))
                 .opacity(0.6)
                 .padding(.top, 20)
-            Image("logo_text_white")
+            Image("logo_text_white") // LOGO
                 .resizable()
                 .scaledToFit()
             Text("App Info")
@@ -58,6 +58,7 @@ struct AppInfoView: View {
             RowAppInfoView(itemOne: "Vývoj", itemTwo: "Jan Podmolík")
             RowAppInfoView(itemOne: "Design", itemTwo: "Jan Podmolík")
             RowAppInfoView(itemOne: "Foto/Video", itemTwo: "Josefína Šlechtová Jan Podmolík")
+            RowAppInfoView(itemOne: "Sportovec", itemTwo: "Jan Podmolík")
             RowAppInfoView(itemOne: "Verze", itemTwo: "1.0.0")
         }
     }

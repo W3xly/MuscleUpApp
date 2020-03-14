@@ -18,7 +18,6 @@ struct TechniqueView: View {
     
     var hapticImpact = UIImpactFeedbackGenerator(style: .heavy)
     
-    
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             
@@ -26,18 +25,21 @@ struct TechniqueView: View {
                 .padding(.top, 35)
                 .padding(.bottom, -20)
             
+            //MARK: - TECHNIKY
+            
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 30.0) {
                     ForEach(self.technique, id: \.self) { item in
                         GeometryReader { geometry in
                             TechniqueCardView(technique: item)
                                 .rotation3DEffect(Angle(degrees:
-                                    Double(geometry.frame(in: .global).minX - 30) / -40), axis: (x: 0, y: 10.0, z: 0))
+                                    Double(geometry.frame(in: .global).minX - 80) / -20), axis: (x: 0, y: 10.0, z: 0))
+                            // Rotuje Kartou lehce v Y ose
                         }
                         .frame(width: 246, height: 330)
                         .onTapGesture {
-                            self.hapticImpact.impactOccurred()
-                            self.showDetail = true
+                            self.hapticImpact.impactOccurred() // Klik odezva
+                            self.showDetail = true // Technique Detail View
                         }
                     }
                 }
@@ -49,12 +51,14 @@ struct TechniqueView: View {
             InfoTextView(infoName: "Tipy")
                 .padding(.bottom, -20)
             
+            //MARK: - TIPY
+            
             TipsCardView(tips: tipsData[actualTip])
                 .padding(.leading, 5)
                 .padding(.trailing, 5)
                 .padding(.bottom, 100)
                 .animation(Animation.easeOut(duration: 0.05))
-                .onTapGesture {
+                .onTapGesture { // Rotuje mezi tipy
                     if self.actualTip < tipsData.count - 1 {
                         self.actualTip += 1
                     } else {
@@ -65,15 +69,15 @@ struct TechniqueView: View {
         }
         .background(Color("ColorBlue2"))
         .edgesIgnoringSafeArea(.all)
-        
     }
-    
 }
 struct TechniqueView_Previews: PreviewProvider {
     static var previews: some View {
         TechniqueView()
     }
 }
+
+//MARK: - TITLE MODIFIER
 
 struct InfoTextView: View {
     

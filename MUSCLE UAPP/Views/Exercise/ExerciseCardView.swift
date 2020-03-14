@@ -22,7 +22,7 @@ struct ExerciseCardView: View {
                 .resizable()
                 .scaledToFit()
                 .overlay(
-                    HStack {
+                    HStack { // Symbol kamery
                         Spacer()
                         VStack {
                             Image(systemName: "video")
@@ -33,7 +33,7 @@ struct ExerciseCardView: View {
                             Spacer()
                         }
                     }
-            ) // symbol kamery
+            )
             VStack(alignment: .leading, spacing: 0) {
                 HStack {
                     Text(exercise.title)
@@ -44,7 +44,7 @@ struct ExerciseCardView: View {
                     ForEach(self.exercise.parts, id: \.self) { item in
                         Image("\(item)")
                     }
-                .lineLimit(2)
+                    .lineLimit(2)
                 }
                 .padding(.horizontal, 10)
                 .border((Color("ColorBlue2")), width: 3)

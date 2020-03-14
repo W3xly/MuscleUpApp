@@ -13,6 +13,7 @@ struct TechniqueCardView: View {
     var technique: Technique
     
     var hapticImpact = UIImpactFeedbackGenerator(style: .heavy)
+    
     @State private var showDetail: Bool = false
     
     var body: some View {

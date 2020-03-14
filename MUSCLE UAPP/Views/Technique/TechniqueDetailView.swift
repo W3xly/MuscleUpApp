@@ -7,26 +7,28 @@
 //
 
 import SwiftUI
-import SDWebImageSwiftUI
+import SDWebImageSwiftUI // Potřebný pro zobrazení gifů
 
 struct TechniqueDetailView: View {
     
     var technique: Technique
     
     @Environment(\.presentationMode) var presentationMode
-    @State private var pulsate: Bool = false
+    @State private var pulsate: Bool = false // Pulsování dismiss buttonu
     
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             Color.white.edgesIgnoringSafeArea(.all)
             VStack(spacing: 0) {
-                AnimatedImage(name: technique.gif) // Progressive Load
+                AnimatedImage(name: technique.gif)
                     .onFailure { error in
                         print("Problem with loading gif image.")
                 }
-                    .placeholder(UIImage(systemName: "photo")) // Placeholder Image
-                    .indicator(SDWebImageActivityIndicator.medium) // Activity Indicator
+                    .placeholder(UIImage(systemName: "photo")) // Placeholder
+                    .indicator(SDWebImageActivityIndicator.medium) // Indikátor Aktivity
                     .scaledToFill()
+                
+                //MARK: - TITLE
                 
                 VStack(spacing: 10) {
                     Text(technique.title)
@@ -40,10 +42,10 @@ struct TechniqueDetailView: View {
                                 .fill(Color("ColorBlue4"))
                                 .frame(minWidth: 250)
                                 .shadow(color: Color("ColorBlue2"), radius: 6, x: 0, y: 6)
-                            
-                            
-                            
                     )
+                    
+                    //MARK: - TECHNIKA
+                    
                     ForEach(technique.technique, id: \.self) { item in
                         VStack(alignment: .center, spacing: 5) {
                             
@@ -81,9 +83,7 @@ struct TechniqueDetailView: View {
                                     .opacity(self.pulsate ? 1 : 0.6)
                                     .scaleEffect(self.pulsate ? 1.2 : 0.8, anchor: .center)
                                     .animation(Animation.easeInOut(duration: 1.5).repeatForever(autoreverses: true))
-                                
                             })
-                                
                                 .padding(.trailing, 20)
                                 .padding(.top, 24)
                             Spacer()

@@ -15,9 +15,9 @@ struct RouletteView: View {
     var body: some View {
         VStack {
             Text(exercise.title)
-            
-            .lineLimit(2)
+                .lineLimit(2)
             Text("\(String(exercise.reps[Int.random(in: 0...exercise.reps.count - 1)])) opakování")
+            // Náhodný počet opakování podle varianty cviku
         }
         .frame(width: 140, height: 150)
         .font(.custom("TitilliumWeb-Black", size: 15))

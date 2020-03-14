@@ -17,7 +17,7 @@ struct ExerciseView: View {
             ScrollView(.vertical, showsIndicators: false) {
                 VStack(alignment: .center, spacing: 20) {
                     InfoTextView(infoName: "Cviky")
-                        .padding(.top, 35) // notch
+                        .padding(.top, 35) // Kvulí notchi
                     ForEach(exercise) { item in
                         ExerciseCardView(exercise: item)
                             .border((Color("ColorBlue4")), width: 5)
@@ -29,7 +29,7 @@ struct ExerciseView: View {
                 .frame(minWidth: 350)
                 .shadow(color: Color("ColorBlue4"), radius: 2, x: 2, y: 1)
             }
-            .padding(.bottom, 60) // navbar
+                .padding(.bottom, 60) // Kvůli Navigation Baru
         }
         .background(Color("ColorBlue2"))
         .edgesIgnoringSafeArea(.all)

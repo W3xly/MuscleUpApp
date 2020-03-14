@@ -10,7 +10,7 @@ import SwiftUI
 
 //MARK: - IMAGE ARRAY
 
-enum MuscleUpImage: Int, CaseIterable { // Inherituje z INT 
+enum MuscleUpImage: Int, CaseIterable { // Inherituje z INT
     
     case muscleUp1, muscleUp2, muscleUp3, muscleUp4, muscleUp5
     
@@ -47,13 +47,13 @@ struct MuscleUpModifier: AnimatableModifier {
         return MuscleUpImage(rawValue: Int(animating))!.image // Double -> enum
     }
 }
-//MARK: - VIEW
+//MARK: - MAIN VIEW
 struct MuscleUpRouletteAnimation: View {
-    @State private var movement: MuscleUpImage = .muscleUp1
-    @State private var rotateOuter = false
-    @State private var roulettePosition : Bool = false
     
-     @State private var actualExercise: Int = 0
+    @State private var movement: MuscleUpImage = .muscleUp1
+    @State private var rotateOuter = false // Rotuje Ruletou
+    @State private var roulettePosition : Bool = false
+    @State private var actualExercise: Int = 0
     
     var body: some View {
         VStack(alignment: .center, spacing: 0) {
@@ -73,18 +73,19 @@ struct MuscleUpRouletteAnimation: View {
                         .foregroundColor(.white)
                     
                     RouletteView(exercise: exerciseData[actualExercise])
-                    .rotationEffect(.degrees(rotateOuter ? 360*3 : 0))
-                    .animation(Animation.easeInOut)
+                        .rotationEffect(.degrees(rotateOuter ? 360*3 : 0)) // Rotuje textem
+                        .animation(Animation.easeInOut)
                 }
                 .onTapGesture() {
-                    self.rotateOuter.toggle()
+                    self.rotateOuter.toggle() // Rotuje ruletou
                     self.actualExercise = Int.random(in: 0...exerciseData.count - 1)
+                    // Generuje náhodný cvik - opakování jsou generovány v Roulette View
                 }
-                
+                //MARK: - RULETA
                 ZStack {
                     Circle()  //
-                        .trim(from: 1/2, to: 4/5)
-                        .stroke(style: .init(lineWidth: 10, lineCap: .square, lineJoin: .round))
+                        .trim(from: 1/2, to: 4/5) // Délka boční linie (bl)
+                        .stroke(style: .init(lineWidth: 10, lineCap: .square, lineJoin: .round)) // Šířka a tvar bl
                         .frame(width: 200, height: 200)
                         .foregroundColor(Color("ColorBlue1"))
                     Circle()  //
@@ -92,14 +93,14 @@ struct MuscleUpRouletteAnimation: View {
                         .stroke(style: .init(lineWidth: 10, lineCap: .square, lineJoin: .round))
                         .frame(width: 200, height: 200)
                         .foregroundColor(Color("ColorBlue1"))
-                        .rotationEffect(.degrees(180))
+                        .rotationEffect(.degrees(180)) // Staví druhou linii do opozice
                     
                 }
-                .rotationEffect(.degrees(rotateOuter ? 400*3 : 60))
-                .animation(Animation.spring(response: 0.95))
+                    .rotationEffect(.degrees(rotateOuter ? 400*3 : 60)) // Rotace linií
+                    .animation(Animation.spring(response: 0.8)) // Doznění animace liníí
                 
             }
-            .offset(y: roulettePosition ? -150 : 250) // Pozice rulety
+                .offset(y: roulettePosition ? -150 : 250) // Pozice Rulety
             Spacer()
         }
         .edgesIgnoringSafeArea(.all)

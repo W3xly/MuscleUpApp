@@ -7,26 +7,28 @@
 //
 
 import SwiftUI
-import SDWebImageSwiftUI
+import SDWebImageSwiftUI // Kvůli Gif Animaci
 
 struct ExerciseDetailView: View {
     
-    @State private var pulsate: Bool = false
-    @Environment(\.presentationMode) var presentationMode
-    
     var exercise: Exercise
+    
+    @State private var pulsate: Bool = false // Pulsování dismiss buttonu
+    @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             Color.white.edgesIgnoringSafeArea(.all)
             VStack(spacing: 12) {
-                AnimatedImage(name: exercise.gif) // Progressive Load
+                AnimatedImage(name: exercise.gif)
                     .onFailure { error in
                         print("Problem with loading gif image.")
                 }
-                    .placeholder(UIImage(systemName: "photo")) // Placeholder Image
-                    .indicator(SDWebImageActivityIndicator.medium) // Activity Indicator
+                    .placeholder(UIImage(systemName: "photo")) // Placeholder
+                    .indicator(SDWebImageActivityIndicator.medium) // Indikátor Aktivity
                     .scaledToFill()
+                
+                //MARK: - TITLE
                 
                 VStack(spacing: 12) {
                     Text(exercise.title)
@@ -40,14 +42,14 @@ struct ExerciseDetailView: View {
                                 .fill(Color("ColorBlue4"))
                                 .frame(minWidth: 250)
                                 .shadow(color: Color("ColorBlue2"), radius: 6, x: 0, y: 6)
-                            
-                            
-                            
                     )
+                    
+                    //MARK: - TEXT
+                    
                     ForEach(exercise.stepByStep, id: \.self) { item in
                         VStack(alignment: .center, spacing: 0) {
                             
-                            Capsule()
+                            Capsule() // Odděluje jednotlivé texty
                                 .frame(width:120, height: 6)
                                 .foregroundColor(Color("ColorBlue3"))
                                 .opacity(0.5)
@@ -68,32 +70,30 @@ struct ExerciseDetailView: View {
                 //MARK: - DIMISS BUTTON
                 
                 .overlay(
-                     HStack {
-                               Spacer()
-                               VStack {
-                                   Button(action: {
-                                       self.presentationMode.wrappedValue.dismiss()
-                                   }, label: {
-                                       Image(systemName: "chevron.down.circle.fill")
-                                           .font(.title)
-                                           .foregroundColor(Color.white)
-                                           .shadow(radius: 4)
-                                           .opacity(self.pulsate ? 1 : 0.6)
-                                           .scaleEffect(self.pulsate ? 1.2 : 0.8, anchor: .center)
-                                           .animation(Animation.easeInOut(duration: 1).repeatForever(autoreverses: true))
-                                       
-                                   })
-                                       
-                                       .padding(.trailing, 20)
-                                       .padding(.top, 24)
-                                   Spacer()
-                               }
-                           }
+                    HStack {
+                        Spacer()
+                        VStack {
+                            Button(action: {
+                                self.presentationMode.wrappedValue.dismiss()
+                            }, label: {
+                                Image(systemName: "chevron.down.circle.fill")
+                                    .font(.title)
+                                    .foregroundColor(Color.white)
+                                    .shadow(radius: 4)
+                                    .opacity(self.pulsate ? 1 : 0.6)
+                                    .scaleEffect(self.pulsate ? 1.2 : 0.8, anchor: .center)
+                                    .animation(Animation.easeInOut(duration: 1).repeatForever(autoreverses: true))
+                            })       
+                                .padding(.trailing, 20)
+                                .padding(.top, 24)
+                            Spacer()
+                        }
+                    }
             )
                 .onAppear() {
                     self.pulsate.toggle()
             }
-            .padding(.top, -20) // Odstraňuje bílou lajnu nad gifem
+                .padding(.top, -20) // Odstraňuje bílou lajnu nad gifem
         }
     }
 }

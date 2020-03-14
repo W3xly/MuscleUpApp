@@ -27,7 +27,7 @@ let techniqueData: [Technique] = [
                     "Při 'odrazu' můžeš lehce využít nabití ramen, pro uložení energie - více v technice Dovnitř a nahoru.",
                     "Poté co zabereš, snaž hrazdu hodit jakoby pod sebe a dostaň hrudník nad hrazdu.",
                     "Techniku můžeš využít i při vysokém přítahu."
-                    ],
+        ],
         image: "swing",
         gif: "airJump.gif"),
     Technique(

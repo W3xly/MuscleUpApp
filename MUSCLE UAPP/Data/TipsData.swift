@@ -10,39 +10,39 @@ import SwiftUI
 
 let tipsData: [Tips] = [
     Tips(
-      image: "oneHand",
-      content: "Nechoď přes jednu ruku!!"
+        image: "oneHand",
+        content: "Nechoď přes jednu ruku!!"
     ),
     Tips(
-      image: "rangeOM",
-      content: "Dělej pohyby v celém rozsahu!"
+        image: "rangeOM",
+        content: "Dělej cviky v celém rozsahu!"
     ),
     Tips(
-      image: "space",
-      content: "Udrž odstup od hrazdy."
+        image: "space",
+        content: "Udrž odstup od hrazdy."
     ),
     Tips(
-      image: "hands",
-      content: "Použij magnésium."
+        image: "hands",
+        content: "Použij magnésium."
     ),
     Tips(
-      image: "swinging",
-      content: "Nehoupej se moc."
+        image: "swinging",
+        content: "Nehoupej se moc."
     ),
     Tips(
-      image: "enoughHigh",
-      content: "Zvol dost vysokou hrazdu."
+        image: "enoughHigh",
+        content: "Zvol dost vysokou hrazdu."
     ),
     Tips(
-      image: "lessTries",
-      content: "Omez počet pokusů."
+        image: "lessTries",
+        content: "Omez počet pokusů."
     ),
     Tips(
-      image: "music",
-      content: "Pusť si hudbu."
+        image: "music",
+        content: "Pusť si hudbu."
     ),
     Tips(
-      image: "overgrip",
-      content: "Používej overgrip."
+        image: "overgrip",
+        content: "Používej overgrip."
     ),
 ]

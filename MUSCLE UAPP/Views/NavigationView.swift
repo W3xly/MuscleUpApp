@@ -16,25 +16,25 @@ struct NavigationView: View {
     var body: some View {
         TabView {
             PlaygroundView()
-            .tabItem({
-                Image("playground")
-                Text("HŘIŠTĚ")
-            })
+                .tabItem({
+                    Image("playground")
+                    Text("HŘIŠTĚ")
+                })
             ExerciseView()
-            .tabItem({
-                Image("muscle") 
-                Text("CVIKY")
-            })
+                .tabItem({
+                    Image("muscle") 
+                    Text("CVIKY")
+                })
             TechniqueView()
-            .tabItem({
+                .tabItem({
                     Image("technique")
                     Text("TECHNIKA")
-            })
+                })
             InfoView()
-            .tabItem({
-                Image("info")
-                Text("INFO")
-            })
+                .tabItem({
+                    Image("info")
+                    Text("INFO")
+                })
         }
         .edgesIgnoringSafeArea(.top)
         .accentColor(Color.primary)
