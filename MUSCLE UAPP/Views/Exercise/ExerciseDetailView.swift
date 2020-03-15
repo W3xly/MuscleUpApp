@@ -32,17 +32,11 @@ struct ExerciseDetailView: View {
                 
                 VStack(spacing: 12) {
                     Text(exercise.title)
-                        .font(.custom("TitilliumWeb-Black", size: 40))
-                        .foregroundColor(Color("ColorBlue1"))
-                        .minimumScaleFactor(0.5)
+                        .font(.custom("TitilliumWeb-Black", size: 38))
+                        .foregroundColor(Color("ColorBlue4"))
                         .lineLimit(2)
-                        .padding()
-                        .background (
-                            RoundedRectangle(cornerRadius: 5)
-                                .fill(Color("ColorBlue4"))
-                                .frame(minWidth: 250)
-                                .shadow(color: Color("ColorBlue2"), radius: 6, x: 0, y: 6)
-                    )
+                        .fixedSize(horizontal: false, vertical: true)
+                        .multilineTextAlignment(.center)
                     
                     //MARK: - TEXT
                     
@@ -55,10 +49,10 @@ struct ExerciseDetailView: View {
                                 .opacity(0.5)
                             
                             Text(item)
-                                .lineLimit(nil)
                                 .foregroundColor(Color("ColorBlue3"))
+                                .font(.custom("TitilliumWeb-SemiBold", size: 16))
                                 .multilineTextAlignment(.center)
-                                .font(.system(.body, design: .serif))
+                                .lineLimit(nil)
                                 .frame(minHeight: 80)
                         }
                     }

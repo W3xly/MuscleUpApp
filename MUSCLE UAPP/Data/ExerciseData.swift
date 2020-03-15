@@ -53,7 +53,7 @@ let exerciseData: [Exercise] = [
         reps: [2,3,4,5,6,8,10]),
     Exercise(
         title: "Explosivní přítahy nohou",
-        stepByStep: ["Souhra rukou a nohou je u tohoto pohybu extrémně důležitá", "Neprohýbej bedra a nekopej nohama za sebe.", "Břicho drž celou dobu v kontrakci.", "Nohy se vždy snaž dostat do roviny se zemí - 90°.", "Silné břicho ti pomůže přenést energie ze spodní poloviny těla.", "Najdi v pohybu rytmus."],
+        stepByStep: ["Souhra rukou a nohou je u tohoto pohybu extrémně důležitá", "Neprohýbej bedra a nekopej nohama za sebe.", "Břicho se snaž udržet co nejdéle v kontrakci.", "Nohy se vždy snaž dostat do roviny se zemí - 90°.", "Silné břicho ti pomůže přenést energie ze spodní poloviny těla.", "Najdi v pohybu rytmus."],
         image: "abs",
         gif: "abs.gif",
         parts: ["absIcon", "forearmIcon"],

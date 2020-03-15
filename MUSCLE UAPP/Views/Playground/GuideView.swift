@@ -23,7 +23,7 @@ struct GuideView: View {
                     .foregroundColor(Color("ColorBlue4"))
                 
                 Text("Vítám tě na tvojí cestě při zdolání Muscle Upu. Ať už bude tvá cesta jakkoli těžká, každý její krok je velmi cenný a pocit vítězství na konci bude stát za každou minutu tvého úsilí.")
-                    .font(.custom("TitilliumWeb-Black", size: 14))
+                    .font(.custom("TitilliumWeb-SemiBold", size: 16))
                     .padding()
                     .fixedSize(horizontal: false, vertical: true)
                     .multilineTextAlignment(.center)
@@ -79,7 +79,7 @@ struct GuideComponent: View {
                 }
                 Divider().padding(.bottom, 4)
                 Text(desctiption)
-                    .font(.custom("TitilliumWeb-Black", size: 14))
+                    .font(.custom("TitilliumWeb-SemiBold", size: 14))
                     .foregroundColor(Color("ColorBlue3"))
                     .fixedSize(horizontal: false, vertical: true)
             }

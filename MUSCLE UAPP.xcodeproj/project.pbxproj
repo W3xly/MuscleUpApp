@@ -24,6 +24,9 @@
 		1048E40224169D1D005256E8 /* TechniqueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1048E3FE24169D1D005256E8 /* TechniqueModel.swift */; };
 		1048E40424169D1D005256E8 /* TipsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1048E40024169D1D005256E8 /* TipsModel.swift */; };
 		1048E40D24169E16005256E8 /* MuscleUpRouletteAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1048E40C24169E16005256E8 /* MuscleUpRouletteAnimation.swift */; };
+		10491694241EBACF0064CA92 /* TitilliumWeb-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 10491693241EBACF0064CA92 /* TitilliumWeb-Black.ttf */; };
+		10491696241EBB7D0064CA92 /* TitilliumWeb-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 10491695241EBB7D0064CA92 /* TitilliumWeb-Regular.ttf */; };
+		10491698241EBC890064CA92 /* TitilliumWeb-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 10491697241EBC890064CA92 /* TitilliumWeb-SemiBold.ttf */; };
 		104C2A132416BC8000A07B9F /* TechniqueCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104C2A122416BC8000A07B9F /* TechniqueCardView.swift */; };
 		105476522419379A0035B2B7 /* ExerciseCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105476512419379A0035B2B7 /* ExerciseCardView.swift */; };
 		10547654241A40A50035B2B7 /* ExerciseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10547653241A40A50035B2B7 /* ExerciseDetailView.swift */; };
@@ -44,7 +47,6 @@
 		106367162416F3700051CFCC /* abs.gif in Resources */ = {isa = PBXBuildFile; fileRef = 106367072416F36F0051CFCC /* abs.gif */; };
 		106367172416F3700051CFCC /* jumpMuscleUp.gif in Resources */ = {isa = PBXBuildFile; fileRef = 106367082416F3700051CFCC /* jumpMuscleUp.gif */; };
 		106367182416F3700051CFCC /* dynamicAustralian.gif in Resources */ = {isa = PBXBuildFile; fileRef = 106367092416F3700051CFCC /* dynamicAustralian.gif */; };
-		1063672424170B310051CFCC /* TitilliumWeb-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1063672324170B300051CFCC /* TitilliumWeb-Black.ttf */; };
 		10636726241794140051CFCC /* TipsCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10636725241794140051CFCC /* TipsCardView.swift */; };
 		1091ECC1241C3194007177F3 /* GuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1091ECC0241C3194007177F3 /* GuideView.swift */; };
 		B981EA87A6DB57FC6D9BCDE7 /* Pods_MUSCLE_UAPP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B35A7965E237B7BE98B6CAFB /* Pods_MUSCLE_UAPP.framework */; };
@@ -70,6 +72,9 @@
 		1048E3FE24169D1D005256E8 /* TechniqueModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TechniqueModel.swift; sourceTree = "<group>"; };
 		1048E40024169D1D005256E8 /* TipsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsModel.swift; sourceTree = "<group>"; };
 		1048E40C24169E16005256E8 /* MuscleUpRouletteAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuscleUpRouletteAnimation.swift; sourceTree = "<group>"; };
+		10491693241EBACF0064CA92 /* TitilliumWeb-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-Black.ttf"; sourceTree = "<group>"; };
+		10491695241EBB7D0064CA92 /* TitilliumWeb-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-Regular.ttf"; sourceTree = "<group>"; };
+		10491697241EBC890064CA92 /* TitilliumWeb-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-SemiBold.ttf"; sourceTree = "<group>"; };
 		104C2A122416BC8000A07B9F /* TechniqueCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechniqueCardView.swift; sourceTree = "<group>"; };
 		105476512419379A0035B2B7 /* ExerciseCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCardView.swift; sourceTree = "<group>"; };
 		10547653241A40A50035B2B7 /* ExerciseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailView.swift; sourceTree = "<group>"; };
@@ -90,8 +95,6 @@
 		106367072416F36F0051CFCC /* abs.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = abs.gif; sourceTree = "<group>"; };
 		106367082416F3700051CFCC /* jumpMuscleUp.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = jumpMuscleUp.gif; sourceTree = "<group>"; };
 		106367092416F3700051CFCC /* dynamicAustralian.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = dynamicAustralian.gif; sourceTree = "<group>"; };
-		1063671A241701380051CFCC /* TitilliumWeb-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-Black.ttf"; sourceTree = "<group>"; };
-		1063672324170B300051CFCC /* TitilliumWeb-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "TitilliumWeb-Black.ttf"; path = "../MUSCLE UAPP/Views/Playground/TitilliumWeb-Black.ttf"; sourceTree = "<group>"; };
 		10636725241794140051CFCC /* TipsCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsCardView.swift; sourceTree = "<group>"; };
 		1091ECC0241C3194007177F3 /* GuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideView.swift; sourceTree = "<group>"; };
 		2F3F1642A71765C448F4CB36 /* Pods-MUSCLE UAPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MUSCLE UAPP.debug.xcconfig"; path = "Target Support Files/Pods-MUSCLE UAPP/Pods-MUSCLE UAPP.debug.xcconfig"; sourceTree = "<group>"; };
@@ -252,8 +255,9 @@
 		10636719241700F70051CFCC /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				1063671A241701380051CFCC /* TitilliumWeb-Black.ttf */,
-				1063672324170B300051CFCC /* TitilliumWeb-Black.ttf */,
+				10491697241EBC890064CA92 /* TitilliumWeb-SemiBold.ttf */,
+				10491693241EBACF0064CA92 /* TitilliumWeb-Black.ttf */,
+				10491695241EBB7D0064CA92 /* TitilliumWeb-Regular.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -336,20 +340,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				101C00672413E1D30097555F /* LaunchScreen.storyboard in Resources */,
+				10491698241EBC890064CA92 /* TitilliumWeb-SemiBold.ttf in Resources */,
 				106367162416F3700051CFCC /* abs.gif in Resources */,
 				106367122416F3700051CFCC /* swing.gif in Resources */,
 				1063670B2416F3700051CFCC /* dynamic.gif in Resources */,
 				106367152416F3700051CFCC /* pullup.gif in Resources */,
 				106367172416F3700051CFCC /* jumpMuscleUp.gif in Resources */,
 				106367112416F3700051CFCC /* airJump.gif in Resources */,
+				10491694241EBACF0064CA92 /* TitilliumWeb-Black.ttf in Resources */,
 				1063670C2416F3700051CFCC /* dynamicPullUp.gif in Resources */,
 				1063670D2416F3700051CFCC /* rubber.gif in Resources */,
+				10491696241EBB7D0064CA92 /* TitilliumWeb-Regular.ttf in Resources */,
 				106367102416F3700051CFCC /* lockNLoad.gif in Resources */,
 				1048E3F024169C52005256E8 /* Assets.xcassets in Resources */,
 				1063670E2416F3700051CFCC /* withHelp.gif in Resources */,
 				106367132416F3700051CFCC /* negative.gif in Resources */,
 				106367142416F3700051CFCC /* dip.gif in Resources */,
-				1063672424170B310051CFCC /* TitilliumWeb-Black.ttf in Resources */,
 				1063670A2416F3700051CFCC /* australian.gif in Resources */,
 				1063670F2416F3700051CFCC /* kick.gif in Resources */,
 				106367182416F3700051CFCC /* dynamicAustralian.gif in Resources */,

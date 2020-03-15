@@ -33,16 +33,10 @@ struct TechniqueDetailView: View {
                 VStack(spacing: 10) {
                     Text(technique.title)
                         .font(.custom("TitilliumWeb-Black", size: 40))
-                        .foregroundColor(Color("ColorBlue1"))
-                        .minimumScaleFactor(0.8)
-                        .lineLimit(1)
-                        .padding()
-                        .background (
-                            RoundedRectangle(cornerRadius: 5)
-                                .fill(Color("ColorBlue4"))
-                                .frame(minWidth: 250)
-                                .shadow(color: Color("ColorBlue2"), radius: 6, x: 0, y: 6)
-                    )
+                        .foregroundColor(Color("ColorBlue4"))
+                        .lineLimit(2)
+                        .fixedSize(horizontal: false, vertical: true)
+                        .multilineTextAlignment(.center)
                     
                     //MARK: - TECHNIKA
                     
@@ -58,7 +52,7 @@ struct TechniqueDetailView: View {
                                 .lineLimit(nil)
                                 .foregroundColor(Color("ColorBlue3"))
                                 .multilineTextAlignment(.center)
-                                .font(.system(.body, design: .serif))
+                                .font(.custom("TitilliumWeb-SemiBold", size: 16))
                                 .frame(minHeight: 80)
                         }
                     }
