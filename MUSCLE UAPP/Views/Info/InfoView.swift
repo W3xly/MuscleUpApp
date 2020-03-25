@@ -86,7 +86,7 @@ struct RowAppInfoView: View {
                 Text(itemTwo)
                     .font(.custom("TitilliumWeb-Regular", size: 16))
                     .foregroundColor(Color("ColorBlue4"))
-                    .frame(maxWidth: 160)
+                    .frame(maxWidth: 140)
                     .fixedSize(horizontal: false, vertical: true)
                     .multilineTextAlignment(.trailing)
             }

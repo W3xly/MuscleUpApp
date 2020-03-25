@@ -23,11 +23,11 @@ let tipsData: [Tips] = [
     ),
     Tips(
         image: "hands",
-        content: "Použij magnésium."
+        content: "Používej magnésium."
     ),
     Tips(
         image: "swinging",
-        content: "Nehoupej se moc."
+        content: "Moc se nehoupej."
     ),
     Tips(
         image: "enoughHigh",

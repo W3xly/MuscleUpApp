@@ -47,7 +47,6 @@ struct ExerciseCardView: View {
                     .lineLimit(2)
                 }
                 .padding(.horizontal, 10)
-                .border((Color("ColorBlue2")), width: 3)
             }
         }
         .background(Color("ColorBlue4"))

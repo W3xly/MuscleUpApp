@@ -19,7 +19,7 @@ struct ExerciseDetailView: View {
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             Color.white.edgesIgnoringSafeArea(.all)
-            VStack(spacing: 12) {
+            VStack(spacing: 0) {
                 AnimatedImage(name: exercise.gif)
                     .onFailure { error in
                         print("Problem with loading gif image.")

@@ -50,9 +50,12 @@ struct MuscleUpModifier: AnimatableModifier {
 //MARK: - MAIN VIEW
 struct MuscleUpRouletteAnimation: View {
     
+    var exercise: [Exercise] = exerciseData
+    
     @State private var movement: MuscleUpImage = .muscleUp1
-    @State private var rotateOuter = false // Rotuje Ruletou
+    @State private var rotateOuter = false // Rotuje Ruletou / Textem
     @State private var roulettePosition : Bool = false
+    @State private var showDetail: Bool = false
     @State private var actualExercise: Int = 0
     
     var body: some View {
@@ -70,16 +73,22 @@ struct MuscleUpRouletteAnimation: View {
                 ZStack { // Je potřeba aby se dalo klikat skrz text
                     Circle()
                         .frame(width: 150, height: 150)
-                        .foregroundColor(.white)
+                        .foregroundColor(Color.white)
                     
                     RouletteView(exercise: exerciseData[actualExercise])
                         .rotationEffect(.degrees(rotateOuter ? 360*3 : 0)) // Rotuje textem
-                        .animation(Animation.easeInOut)
+                        .animation(Animation.easeInOut.speed(1.5))
                 }
                 .onTapGesture() {
                     self.rotateOuter.toggle() // Rotuje ruletou
                     self.actualExercise = Int.random(in: 0...exerciseData.count - 1)
                     // Generuje náhodný cvik - opakování jsou generovány v Roulette View
+                }
+                .onLongPressGesture {
+                    self.showDetail = true
+
+                }.sheet(isPresented: self.$showDetail) {
+                    ExerciseDetailView(exercise: exerciseData[self.actualExercise])
                 }
                 //MARK: - RULETA
                 ZStack {

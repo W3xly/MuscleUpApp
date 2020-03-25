@@ -15,10 +15,9 @@ struct TipsCardView: View {
     var body: some View {
         VStack(alignment: .center, spacing: 0) {
             Text(tips.content)
-                .font(Font.custom("TitilliumWeb-SemiBold", size: 30))
+                .font(Font.custom("TitilliumWeb-SemiBold", size: 28))
                 .foregroundColor(Color("ColorBlue4"))
                 .lineLimit(1)
-                .minimumScaleFactor(0.8)
                 .padding()
             Image(tips.image)
                 .resizable()

@@ -11,7 +11,6 @@ import SwiftUI
 struct NavigationView: View {
     init() {
         UITabBar.appearance().backgroundColor = UIColor(named: "ColorBlue4")
-        UITabBar.appearance().alpha = 0.95
     }
     var body: some View {
         TabView {

@@ -28,8 +28,8 @@ struct PlaygroundView: View {
                 .background(
                     Image("background")
                         .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .edgesIgnoringSafeArea(.all)
+                        .scaledToFill()
+                        //.edgesIgnoringSafeArea(.all)
                 )
             }
             //MARK: - GUIDE BUTTON QUESTIONMARK
@@ -38,8 +38,7 @@ struct PlaygroundView: View {
                 VStack {
                     Button(action: {
                         self.haptics.notificationOccurred(.success) // Odezva kliku
-                        self.showGuideView.toggle()
-                        
+                        self.showGuideView.toggle()            
                     }) {
                         Image(systemName: "questionmark.circle")
                             .font(.custom("TitilliumWeb-Black", size: 45))
