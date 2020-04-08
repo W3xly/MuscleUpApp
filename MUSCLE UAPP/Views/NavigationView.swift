@@ -35,7 +35,6 @@ struct NavigationView: View {
                     Text("INFO")
                 })
         }
-        .edgesIgnoringSafeArea(.top)
         .accentColor(Color.primary)
     }
 }
