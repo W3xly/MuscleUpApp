@@ -2,11 +2,9 @@
 
 Pro všechny nadšence pohybu co se chtějí dostat nad hrazdu. :)
 
-V rámci zobrazení gifu je potřeba SDWebImageSwiftUI image loading framework.
+Do aplikace je nutné doinstalovat SDWebImage Cocapod.
 
-Pod file je přiložený ve složce aplikace, pokud máte nainstalovaný CocoaPods manager -> ( $ sudo gem install cocoapods ).
-
-V tom případě by mělo stačit skrz terminál v dáné složce napsat -> ( pod install )
+Aplikace je napsaná ve SwiftUI.
 
 <p float="left">
 <img src="image1.jpg" alt="preview1" width="200">
