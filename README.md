@@ -1,5 +1,4 @@
 # MuscleUpApp
-My First App
 
 Pro všechny nadšence pohybu co se chtějí dostat nad hrazdu. :)
 
